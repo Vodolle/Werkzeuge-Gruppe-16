@@ -12,8 +12,6 @@ class DataSetItem():
 		self.name = name 
 		self.id = id 
 		self.content = content
-
-	def __str__(self):
 		return "Item {name} ({id}) containing {t}{p}".format(
 				name=self.name, id=self.id,
 				t=type(self.content).__name__,
@@ -84,3 +82,4 @@ class DataSetInterface(ABC):
 			items='\n\t - '.join([str(i) for i in self])
 		)
 			
+v
